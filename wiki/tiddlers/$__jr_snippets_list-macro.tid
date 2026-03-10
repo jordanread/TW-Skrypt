@@ -1,0 +1,11 @@
+caption: List Macro by tag
+created: 20260310162353940
+creator: jordan
+modified: 20260310162455462
+modifier: jordan
+tags: $:/tags/TextEditor/Snippet
+title: $:/jr/snippets/list-macro
+type: text/vnd.tiddlywiki
+
+<$list filter="[tag[TagName]]">
+</$list>
