@@ -1,0 +1,43 @@
+created: 20260310155636394
+creator: jordan
+modified: 20260310161221864
+modifier: jordan
+tags: start
+title: Notes
+type: text/vnd.tiddlywiki
+
+I'm starting with a general structure idea.
+
+* Story
+** Required Fields: Author, License (default to non-commercial with attribution)
+** Optional Fields: Genre, Subtitle, ISBN, Cover Image
+ViewTemplate
+  Pretty table with Fields
+  Stat table (child objects, count)
+  
+
+* Plot
+** Type (Main, Secondary, Minor) - Maybe this should be an int slider, from 0 for Main to 5 for Minor
+** Obstacle
+** Resolution
+** META: Characters, Section/Chapter/Scene
+
+* World
+** Geography
+** Culture
+** Politics
+** Technology
+** Historical Events
+
+* Outline
+** Section
+*** Chapter
+**** Scene
+
+* Character
+** Demographics (Age, Gender,etc)
+** Personality
+** Motivation
+** Goals
+** Conflict
+** Resolution
