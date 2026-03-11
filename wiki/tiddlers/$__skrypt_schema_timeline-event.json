@@ -1,0 +1,28 @@
+{
+  "entity": "timeline-event",
+  "description": "Historical event in the story timeline.",
+  "required": [
+    "story-id",
+    "skrypt-type",
+    "skrypt-id",
+    "title",
+    "created",
+    "modified"
+  ],
+  "fields": {
+    "story-id": { "type": "string" },
+    "skrypt-type": { "type": "string", "default": "timeline-event" },
+    "skrypt-id": { "type": "string" },
+    "title": { "type": "string" },
+    "year": { "type": "number" },
+    "month": { "type": "number" },
+    "day": { "type": "number" },
+    "era": { "type": "string" },
+    "location": { "type": "string" },
+    "participants": { "type": "list" },
+    "summary": { "type": "text" },
+    "importance": { "type": "string" },
+    "created": { "type": "date" },
+    "modified": { "type": "date" }
+  }
+}

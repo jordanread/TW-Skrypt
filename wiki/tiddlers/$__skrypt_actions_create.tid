@@ -1,0 +1,32 @@
+created: 20260310203917089
+modified: 20260310211505730
+title: $:/skrypt/actions/create
+type: text/vnd.tiddlywiki
+
+\define skrypt-create(type story title)
+
+<$vars
+    skryptType=<<type>>
+    storyId=<<story>>
+    entityTitle=<<title>>
+    entitySlug={{{ [<entityTitle>slugify[]] }}}
+    nowStamp=<<now "YYYY0MM0DD0hh0mm">>
+>
+
+<$action-createtiddler
+    $basetitle=<<entityTitle>>
+    story-id=<<storyId>>
+    skrypt-type=<<skryptType>>
+    skrypt-id=<<entitySlug>>
+    created=<<nowStamp>>
+    modified=<<nowStamp>>
+/>
+
+<$action-sendmessage
+    $message="tm-navigate"
+    $param=<<entityTitle>>
+/>
+
+</$vars>
+
+\end

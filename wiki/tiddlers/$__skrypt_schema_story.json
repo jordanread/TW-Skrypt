@@ -1,0 +1,59 @@
+{
+  "entity": "story",
+  "description": "Root project container representing a story or book.",
+  "required": [
+    "story-id",
+    "skrypt-type",
+    "skrypt-id",
+    "title",
+    "created",
+    "modified"
+  ],
+  "fields": {
+    "story-id": {
+      "type": "string",
+      "description": "Canonical slug identifying the story"
+    },
+    "skrypt-type": {
+      "type": "string",
+      "default": "story"
+    },
+    "skrypt-id": {
+      "type": "string",
+      "description": "Unique slug for this story"
+    },
+    "title": {
+      "type": "string"
+    },
+    "author": {
+      "type": "string"
+    },
+    "genre": {
+      "type": "string"
+    },
+    "subgenre": {
+      "type": "string"
+    },
+    "logline": {
+      "type": "string"
+    },
+    "premise": {
+      "type": "text"
+    },
+    "status": {
+      "type": "string"
+    },
+    "target-wordcount": {
+      "type": "number"
+    },
+    "structure-model": {
+      "type": "string"
+    },
+    "created": {
+      "type": "date"
+    },
+    "modified": {
+      "type": "date"
+    }
+  }
+}

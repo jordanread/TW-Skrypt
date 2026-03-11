@@ -1,0 +1,20 @@
+created: 20260310204103602
+modified: 20260310211448166
+title: $:/skrypt/ui/new-button
+type: text/vnd.tiddlywiki
+
+\define skrypt-new-button(type story label)
+
+<$button class="tc-btn-invisible">
+
+<<skrypt-create
+    type:"""$(type)$"""
+    story:"""$(story)$"""
+    title:"New $(type)$"
+>>
+
+$(label)$
+
+</$button>
+
+\end

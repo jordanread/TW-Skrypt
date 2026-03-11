@@ -1,0 +1,24 @@
+created: 20260310211825050
+modified: 20260310212057475
+title: $:/skrypt/wizards/new-story
+type: text/vnd.tiddlywiki
+
+! Create New Story
+
+| Field | Value |
+| Title | <$edit-text tiddler="$:/state/skrypt/new-story" field="story-title"/> |
+| Author | <$edit-text tiddler="$:/state/skrypt/new-story" field="author"/> |
+| Genre | <$edit-text tiddler="$:/state/skrypt/new-story" field="genre"/> |
+| Logline | <$edit-text tiddler="$:/state/skrypt/new-story" field="logline"/> |
+| Target Wordcount | <$edit-text tiddler="$:/state/skrypt/new-story" field="target-wordcount"/> |
+| Structure | <$edit-text tiddler="$:/state/skrypt/new-story" field="structure-model"/> |
+
+---
+
+<$button class="tc-btn-primary">
+
+Create Story
+
+<<skrypt-create-story>>
+
+</$button>

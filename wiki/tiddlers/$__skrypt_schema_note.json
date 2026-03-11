@@ -1,0 +1,21 @@
+{
+  "entity": "note",
+  "description": "General note within a story project.",
+  "required": [
+    "story-id",
+    "skrypt-type",
+    "skrypt-id",
+    "title",
+    "created",
+    "modified"
+  ],
+  "fields": {
+    "story-id": { "type": "string" },
+    "skrypt-type": { "type": "string", "default": "note" },
+    "skrypt-id": { "type": "string" },
+    "title": { "type": "string" },
+    "tags": { "type": "list" },
+    "created": { "type": "date" },
+    "modified": { "type": "date" }
+  }
+}
