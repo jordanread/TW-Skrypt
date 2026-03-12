@@ -1,0 +1,18 @@
+created: 20260310190038308
+modified: 20260312122117563
+tags: start
+title: TW-Script Notes
+type: text/vnd.tiddlywiki
+
+<$list filter="[all[tiddlers+shadows]prefix[$:/state/skrypt]]">
+<$transclude mode="block"/>
+</$list>
+
+$:/skrypt/wizards/new-story
+$:/skrypt/ui/new-story-button
+$:/skrypt/actions/create-story
+$:/skrypt/state/new-story
+
+!! Shadows
+<<list-links "[all[tiddlers+shadows]prefix[$:/skrypt]]">>
+

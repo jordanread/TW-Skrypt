@@ -1,0 +1,36 @@
+created: 20260310211932096
+modified: 20260312121906890
+title: $:/skrypt/actions/create-story
+type: text/vnd.tiddlywiki
+
+\define skrypt-create-story()
+
+<$vars
+    storyTitle={{$:/state/skrypt/new-story!!story-title}}
+    storySlug={{{ [{$:/state/skrypt/new-story!!story-title}slugify[]] }}}
+    nowStamp=<<now "YYYY0MM0DD0hh0mm">>
+>
+
+<$action-log
+    $basetitle=<<storyTitle>>
+    title=<<storyTitle>>
+    story-id=<<storySlug>>
+    skrypt-id=<<storySlug>>
+    skrypt-type="story"
+    author={{$:/state/skrypt/new-story!!author}}
+    genre={{$:/state/skrypt/new-story!!genre}}
+    logline={{$:/state/skrypt/new-story!!logline}}
+    structure-model={{$:/state/skrypt/new-story!!structure-model}}
+    target-wordcount={{$:/state/skrypt/new-story!!target-wordcount}}
+    created=<<nowStamp>>
+    modified=<<nowStamp>>
+/>
+
+<$action-sendmessage
+    $message="tm-navigate"
+    $param=<<storyTitle>>
+/>
+
+</$vars>
+
+\end
