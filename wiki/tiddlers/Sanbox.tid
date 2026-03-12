@@ -1,6 +1,6 @@
 created: 20260310155636394
 creator: jordan
-modified: 20260312152432250
+modified: 20260312154139262
 modifier: jordan
 tags: start
 title: Sanbox
@@ -25,12 +25,12 @@ And to interate a list:
 
 For a top-level key, there is a shortcut that can be used in transclusion: `{{$:/skrypt/schema/story##entity}}`.
 
-{{$:/skrypt/schema/story##entity}}
+{{$:/skrypt/schema/story##fields##skrypt-id}}
 
 
-<$set name="requiredFields" filter="[{$:/skrypt/schema/story}jsonget[required]]">
-<<requiredFields>>
+<$set name="fields" filter="[{$:/skrypt/schema/story}jsonget[fields]]">
+<$list filter=<<fields>>>
+
+<<currentTiddler>>
+</$list>
 </$set>
-
-<$jsontiddler tiddler="$:/skrypt/schema/story##required">
-{{$:/skrypt/schema/story##required}}
