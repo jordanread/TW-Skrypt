@@ -1,0 +1,15 @@
+created: 20260310211738630
+modified: 20260310211745872
+title: $:/skrypt/ui/new-story-button
+type: text/vnd.tiddlywiki
+
+<$button class="tc-btn-primary">
+
+New Story
+
+<$action-sendmessage
+    $message="tm-navigate"
+    $param="$:/skrypt/wizards/new-story"
+/>
+
+</$button>

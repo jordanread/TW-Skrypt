@@ -1,0 +1,25 @@
+{
+  "entity": "location",
+  "description": "Place or setting within a story world.",
+  "required": [
+    "story-id",
+    "skrypt-type",
+    "skrypt-id",
+    "name",
+    "created",
+    "modified"
+  ],
+  "fields": {
+    "story-id": { "type": "string" },
+    "skrypt-type": { "type": "string", "default": "location" },
+    "skrypt-id": { "type": "string" },
+    "name": { "type": "string" },
+    "location-type": { "type": "string" },
+    "region": { "type": "string" },
+    "description": { "type": "text" },
+    "culture": { "type": "text" },
+    "first-appearance": { "type": "string" },
+    "created": { "type": "date" },
+    "modified": { "type": "date" }
+  }
+}

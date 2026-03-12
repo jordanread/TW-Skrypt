@@ -1,0 +1,14 @@
+created: 20260310204003478
+modified: 20260310211415285
+title: $:/skrypt/macros/new
+type: text/vnd.tiddlywiki
+
+\define skrypt-new(type story title)
+
+<<skrypt-create
+    type:"""$(type)$"""
+    story:"""$(story)$"""
+    title:"""$(title)$"""
+>>
+
+\end

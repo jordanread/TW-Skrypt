@@ -1,0 +1,23 @@
+{
+  "entity": "beat",
+  "description": "Story beat within an outline structure.",
+  "required": [
+    "story-id",
+    "skrypt-type",
+    "skrypt-id",
+    "beat-order",
+    "created",
+    "modified"
+  ],
+  "fields": {
+    "story-id": { "type": "string" },
+    "skrypt-type": { "type": "string", "default": "beat" },
+    "skrypt-id": { "type": "string" },
+    "beat-order": { "type": "number" },
+    "beat-type": { "type": "string" },
+    "description": { "type": "text" },
+    "related-scene": { "type": "string" },
+    "created": { "type": "date" },
+    "modified": { "type": "date" }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "entity": "manuscript",
+  "description": "A manuscript draft belonging to a story.",
+  "required": [
+    "story-id",
+    "skrypt-type",
+    "skrypt-id",
+    "title",
+    "created",
+    "modified"
+  ],
+  "fields": {
+    "story-id": { "type": "string" },
+    "skrypt-type": { "type": "string", "default": "manuscript" },
+    "skrypt-id": { "type": "string" },
+    "title": { "type": "string" },
+    "draft-number": { "type": "number" },
+    "status": { "type": "string" },
+    "wordcount-target": { "type": "number" },
+    "created": { "type": "date" },
+    "modified": { "type": "date" }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "entity": "chapter",
+  "description": "Chapter container grouping scenes.",
+  "required": [
+    "story-id",
+    "manuscript-id",
+    "skrypt-type",
+    "skrypt-id",
+    "title",
+    "chapter-order",
+    "created",
+    "modified"
+  ],
+  "fields": {
+    "story-id": { "type": "string" },
+    "manuscript-id": { "type": "string" },
+    "skrypt-type": { "type": "string", "default": "chapter" },
+    "skrypt-id": { "type": "string" },
+    "title": { "type": "string" },
+    "chapter-order": { "type": "number" },
+    "summary": { "type": "text" },
+    "status": { "type": "string" },
+    "created": { "type": "date" },
+    "modified": { "type": "date" }
+  }
+}
