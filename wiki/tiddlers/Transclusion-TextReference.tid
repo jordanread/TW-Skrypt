@@ -1,0 +1,11 @@
+created: 20260312154105781
+modified: 20260312154207030
+tags: [[JSON Manipulation]]
+title: Transclusion-TextReference
+type: text/vnd.tiddlywiki
+
+`{{$:/skrypt/schema/story##entity}}`
+
+Results:
+
+{{$:/skrypt/schema/story##entity}}

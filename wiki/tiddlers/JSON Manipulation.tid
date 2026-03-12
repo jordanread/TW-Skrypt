@@ -1,0 +1,14 @@
+created: 20260312153843637
+description: This is just a little sanbdox for playing with different ways of manipulating json reads.
+modified: 20260312154240861
+tags: 
+title: JSON Manipulation
+type: text/vnd.tiddlywiki
+
+
+<<slider label:"Value Transclusion" src:"{{Transclusion-TextReference}}" labelClass:"" srcClass:"">>
+
+
+<<slider label:"JSON Tiddler" src:{{$:/skrypt/schema/story}} labelClass:"" srcClass:"">>
+
+
