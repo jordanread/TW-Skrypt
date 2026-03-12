@@ -1,0 +1,36 @@
+created: 20260310155636394
+creator: jordan
+modified: 20260312152432250
+modifier: jordan
+tags: start
+title: Sanbox
+type: text/vnd.tiddlywiki
+
+Okay, it's time to try to get the wizard to use the fields in $:/skrypt/schema/story. This will be where I test the code.
+
+This filter works for an object that is just an array of strings instead of a key/value pair.:
+`[{$:/skrypt/schema/story}jsonget[required]]`. 
+
+<$set name="requiredFields" filter="[{$:/skrypt/schema/story}jsonget[required]]">
+`requiredFields` variable shows: <<requiredFields>>.
+
+And to interate a list:
+
+<$list filter=<<requiredFields>>>
+
+<<currentTiddler>>
+
+</$list>
+</$set>
+
+For a top-level key, there is a shortcut that can be used in transclusion: `{{$:/skrypt/schema/story##entity}}`.
+
+{{$:/skrypt/schema/story##entity}}
+
+
+<$set name="requiredFields" filter="[{$:/skrypt/schema/story}jsonget[required]]">
+<<requiredFields>>
+</$set>
+
+<$jsontiddler tiddler="$:/skrypt/schema/story##required">
+{{$:/skrypt/schema/story##required}}
