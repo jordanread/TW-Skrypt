@@ -1,0 +1,94 @@
+{
+  "fiction": {
+    "action": {
+      "name": "Action",
+      "description": "Fast‑paced narratives filled with physical stunts, chases, and high‑energy conflict."
+    },
+    "adventure": {
+      "name": "Adventure",
+      "description": "Exciting journeys or quests that transport characters to unknown or exotic locales."
+    },
+    "comedy": {
+      "name": "Comedy",
+      "description": "Humorous stories crafted to amuse and provoke laughter."
+    },
+    "drama": {
+      "name": "Drama",
+      "description": "Serious, character‑driven tales that explore emotional and relational complexities."
+    },
+    "fantasy": {
+      "name": "Fantasy",
+      "description": "Imaginative worlds featuring magic, mythical creatures, and supernatural powers."
+    },
+    "scienceFiction": {
+      "name": "Science Fiction",
+      "description": "Speculative works that examine futuristic technology, space travel, or alternate realities."
+    },
+    "horror": {
+      "name": "Horror",
+      "description": "Narratives designed to frighten, unsettle, or create a sense of dread."
+    },
+    "mystery": {
+      "name": "Mystery",
+      "description": "Plots centered on solving a puzzle, crime, or enigmatic event."
+    },
+    "romance": {
+      "name": "Romance",
+      "description": "Stories focused on love, relationships, and emotional intimacy."
+    },
+    "thriller": {
+      "name": "Thriller",
+      "description": "Tension‑filled tales that keep readers on edge with suspense and danger."
+    },
+    "western": {
+      "name": "Western",
+      "description": "Set in the American frontier, featuring cowboys, outlaws, and rugged landscapes."
+    },
+    "historical": {
+      "name": "Historical",
+      "description": "Fiction grounded in a specific past era, emphasizing authentic period details."
+    }
+  },
+  "nonFiction": {
+    "biography": {
+      "name": "Biography",
+      "description": "A factual account of a person's life, achievements, and experiences."
+    },
+    "memoir": {
+      "name": "Memoir",
+      "description": "A personal narrative focusing on specific memories or periods in the author's life."
+    },
+    "history": {
+      "name": "History",
+      "description": "A detailed examination of past events, societies, or movements based on evidence."
+    },
+    "science": {
+      "name": "Science",
+      "description": "Explanations of natural phenomena, research findings, and scientific concepts."
+    },
+    "selfHelp": {
+      "name": "Self‑Help",
+      "description": "Guidance and strategies for personal improvement, motivation, or well‑being."
+    },
+    "travel": {
+      "name": "Travel",
+      "description": "Descriptive accounts of places, cultures, and journeys, often with practical tips."
+    },
+    "trueCrime": {
+      "name": "True Crime",
+      "description": "Investigative storytelling about real criminal cases and their investigations."
+    },
+    "philosophy": {
+      "name": "Philosophy",
+      "description": "Explorations of fundamental questions about existence, knowledge, and ethics."
+    },
+    "essay": {
+      "name": "Essay",
+      "description": "Short, focused nonfiction pieces that argue, reflect, or inform on a specific topic."
+    },
+    "business": {
+      "name": "Business",
+      "description": "Insights into commerce, entrepreneurship, management, and market dynamics."
+    }
+  }
+}

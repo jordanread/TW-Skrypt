@@ -1,0 +1,9 @@
+created: 20260313135524039
+modified: 20260313144628775
+tags: todo
+title: $:/skrypt/procedures/create-new
+type: text/vnd.tiddlywiki
+
+\procedure skrypt-create-new(skrypt-type:"",param2)
+Your text comes here.
+\end

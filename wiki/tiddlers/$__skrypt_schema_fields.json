@@ -7,12 +7,27 @@
     },
     "skrypt-type": {
         "defaultValue": "",
-        "helpText": "",
+        "helpText": "Internal Skrypt-Type for organization and ViewTemplates",
         "readonly": "false",
         "type": "string"
     },
     "skrypt-id": {
+        "defaultValue": "",
+        "helpText": "Auto-generated id for internal linking in TW-Skrypt",
+        "readonly": "true",
         "type": "string"
+    },
+    "target-wordcount": {
+        "defaultValue": "",
+        "helpText": "",
+        "readonly": "false",
+        "type": "number"
+    },
+    "genre": {
+        "defaultValue": "",
+        "helpText": "Choose your desired genre.",
+        "readonly": "false",
+        "type": "$:/skrypt/lookups/genre"
     },
     "name": {
         "type": "string"
@@ -189,12 +204,6 @@
         "readonly": "false",
         "type": "string"
     },
-    "genre": {
-        "defaultValue": "",
-        "helpText": "",
-        "readonly": "false",
-        "type": "string"
-    },
     "subgenre": {
         "defaultValue": "",
         "helpText": "",
@@ -212,11 +221,5 @@
         "helpText": "",
         "readonly": "false",
         "type": "string"
-    },
-    "target-wordcount": {
-        "defaultValue": "",
-        "helpText": "",
-        "readonly": "false",
-        "type": "number"
     }
 }
