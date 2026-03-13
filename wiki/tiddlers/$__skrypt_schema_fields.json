@@ -1,0 +1,222 @@
+{
+    "story-id": {
+        "defaultValue": "",
+        "helpText": "Auto-generated story slug.",
+        "readonly": "true",
+        "type": "string"
+    },
+    "skrypt-type": {
+        "defaultValue": "",
+        "helpText": "",
+        "readonly": "false",
+        "type": "string"
+    },
+    "skrypt-id": {
+        "type": "string"
+    },
+    "name": {
+        "type": "string"
+    },
+    "type": {
+        "type": "string"
+    },
+    "leader": {
+        "type": "string"
+    },
+    "members": {
+        "type": "list"
+    },
+    "description": {
+        "type": "text"
+    },
+    "created": {
+        "type": "date"
+    },
+    "modified": {
+        "type": "date"
+    },
+    "title": {
+        "type": "string"
+    },
+    "structure-model": {
+        "type": "string"
+    },
+    "beat-order": {
+        "type": "number"
+    },
+    "beat-type": {
+        "type": "string"
+    },
+    "related-scene": {
+        "type": "string"
+    },
+    "manuscript-id": {
+        "type": "string"
+    },
+    "chapter-order": {
+        "type": "number"
+    },
+    "summary": {
+        "type": "text"
+    },
+    "status": {
+        "type": "string"
+    },
+    "role": {
+        "type": "string"
+    },
+    "archetype": {
+        "type": "string"
+    },
+    "age": {
+        "type": "number"
+    },
+    "gender": {
+        "type": "string"
+    },
+    "goals": {
+        "type": "text"
+    },
+    "motivation": {
+        "type": "text"
+    },
+    "conflict": {
+        "type": "text"
+    },
+    "character-arc": {
+        "type": "text"
+    },
+    "first-appearance": {
+        "type": "string"
+    },
+    "owner": {
+        "type": "string"
+    },
+    "location-type": {
+        "type": "string"
+    },
+    "region": {
+        "type": "string"
+    },
+    "culture": {
+        "type": "text"
+    },
+    "draft-number": {
+        "type": "number"
+    },
+    "wordcount-target": {
+        "type": "number"
+    },
+    "source": {
+        "type": "string"
+    },
+    "author": {
+        "type": "string"
+    },
+    "url": {
+        "type": "string"
+    },
+    "notes": {
+        "type": "text"
+    },
+    "tags": {
+        "type": "list"
+    },
+    "chapter-id": {
+        "type": "string"
+    },
+    "scene-order": {
+        "type": "number"
+    },
+    "pov-character": {
+        "type": "string"
+    },
+    "location": {
+        "type": "string"
+    },
+    "time": {
+        "type": "string"
+    },
+    "goal": {
+        "type": "text"
+    },
+    "outcome": {
+        "type": "text"
+    },
+    "characters-present": {
+        "type": "list"
+    },
+    "wordcount": {
+        "defaultValue": "",
+        "helpText": "",
+        "readonly": "false",
+        "type": "string",
+        "type": "number"
+    },
+    "year": {
+        "defaultValue": "",
+        "helpText": "",
+        "readonly": "false",
+        "type": "string"
+    },
+    "month": {
+        "defaultValue": "",
+        "helpText": "",
+        "readonly": "false",
+        "type": "string"
+    },
+    "day": {
+        "defaultValue": "",
+        "helpText": "",
+        "readonly": "false",
+        "type": "string"
+    },
+    "era": {
+        "defaultValue": "",
+        "helpText": "",
+        "readonly": "false",
+        "type": "string"
+    },
+    "participants": {
+        "defaultValue": "",
+        "helpText": "",
+        "readonly": "false",
+        "type": "string"
+    },
+    "importance": {
+        "defaultValue": "",
+        "helpText": "",
+        "readonly": "false",
+        "type": "string"
+    },
+    "genre": {
+        "defaultValue": "",
+        "helpText": "",
+        "readonly": "false",
+        "type": "string"
+    },
+    "subgenre": {
+        "defaultValue": "",
+        "helpText": "",
+        "readonly": "false",
+        "type": "string"
+    },
+    "logline": {
+        "defaultValue": "",
+        "helpText": "",
+        "readonly": "false",
+        "type": "string"
+    },
+    "premise": {
+        "defaultValue": "",
+        "helpText": "",
+        "readonly": "false",
+        "type": "string"
+    },
+    "target-wordcount": {
+        "defaultValue": "",
+        "helpText": "",
+        "readonly": "false",
+        "type": "number"
+    }
+}

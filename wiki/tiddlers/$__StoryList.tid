@@ -1,5 +1,5 @@
 created: 20260312142322213
-list: [[JSON Manipulation]] Transclusion-TextReference $:/skrypt/schema/character Sanbox $:/skrypt/schema/story
-modified: 20260312152544428
+list: $:/skrypt/schema/fields $:/skrypt/schema/story
+modified: 20260312154433794
 title: $:/StoryList
 type: text/vnd.tiddlywiki
