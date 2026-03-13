@@ -1,18 +1,29 @@
 created: 20260310190038308
-modified: 20260312122117563
+modified: 20260313090509482
 tags: start
 title: TW-Script Notes
 type: text/vnd.tiddlywiki
 
-<$list filter="[all[tiddlers+shadows]prefix[$:/state/skrypt]]">
-<$transclude mode="block"/>
-</$list>
+!!! TODO
 
-$:/skrypt/wizards/new-story
-$:/skrypt/ui/new-story-button
-$:/skrypt/actions/create-story
-$:/skrypt/state/new-story
+<<checklist focus:"no">>
+
+By Tag: 
+
+<<list-links "[all[tiddlers+shadows]tag[todo]]">>
+
+
+<<slider label:"All Shadows" src:"
 
 !! Shadows
-<<list-links "[all[tiddlers+shadows]prefix[$:/skrypt]]">>
+<<list-links '[all[tiddlers+shadows]prefix[$:/skrypt]]'>>
 
+">>
+
+
+
+
+@@.todo
+[ ] Build frameworks and methodologies.
+[ ] Build dynamic wizard
+@@
