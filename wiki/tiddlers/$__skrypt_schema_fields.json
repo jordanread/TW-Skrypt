@@ -8,7 +8,7 @@
     "skrypt-type": {
         "defaultValue": "",
         "helpText": "Internal Skrypt-Type for organization and ViewTemplates",
-        "readonly": "false",
+        "readonly": "true",
         "type": "string"
     },
     "wordcount": {

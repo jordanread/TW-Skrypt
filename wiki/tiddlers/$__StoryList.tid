@@ -1,5 +1,5 @@
-created: 20260313130414395
-list: $:/skrypt/procedures/field-editor [[TW-Script Notes]] $:/skrypt/schema/global-fields $:/skrypt/schema/fields $:/skrypt/schema/types Sanbox
-modified: 20260313151503632
+created: 20260313203223611
+list: $:/skrypt/procedures/field-display Sandbox [[TW-Script Notes]] $:/skrypt/schema/fields $:/skrypt/schema/story
+modified: 20260313203233942
 title: $:/StoryList
 type: text/vnd.tiddlywiki

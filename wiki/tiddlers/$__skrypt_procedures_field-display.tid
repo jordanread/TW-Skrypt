@@ -1,48 +1,58 @@
 created: 20260313155913070
-modified: 20260313162757300
-tags: 
-title: $:/skrypt/procedures/field-editor
+modified: 20260313203203291
+tags: start todo
+title: $:/skrypt/procedures/field-display
 type: text/vnd.tiddlywiki
+wordcount-target: 
 
-\procedure skrypt-field-editor(field)
+\procedure skrypt-field(field)
+! <<field>>
 <$vars
 type={{{ [{$:/skrypt/schema/fields}jsonget<field>,[type]] }}}
 readonly={{{ [{$:/skrypt/schema/fields}jsonget<field>,[readonly]] }}}
 tooltip={{{ [{$:/skrypt/schema/fields}jsonget<field>,[helpText]] }}}
 >
 
-| <<field>> | <<type>> | <<readonly>> | <<tooltip>>
+| <<field>> | <<type>> | <<readonly>> | <<tooltip>>|
 
+<$edit-text field=<<field>> type="number"/>
 <$list filter="[<readonly>match[true]]">
 
-{{!!<<field>>}}
+is readonly
+
+
 
 </$list>
 
 <$list filter="[<readonly>!match[true]]">
 
+isn't readonly
+
 <$list filter="[<type>match[string]]">
-<$edit-text field=<<field>>/>
+
+is string
+
+<$edit-text field=<<field>> type="number"/>
 </$list>
 
 <$list filter="[<type>match[text]]">
+
+is text
+
 <$edit-text field=<<field>> multiline="yes"/>
 </$list>
 
 <$list filter="[<type>match[number]]">
-<$edit-text field=<<field>> inputmode="numeric"/>
+
+is number
+
+<$edit-text field=<<field>> type="number"/>
 </$list>
 
-</$list>
-
-|
-
-<$list filter="[<help>!is[blank]]">
-''<<help>>''
 </$list>
 
 </$vars>
 \end
 
 
-<<skrypt-field-editor "skrypt-type">>
+<<skrypt-field "wordcount-target">>
