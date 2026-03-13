@@ -1,5 +1,5 @@
 created: 20260310190038308
-modified: 20260313090509482
+modified: 20260313134357383
 tags: start
 title: TW-Script Notes
 type: text/vnd.tiddlywiki
@@ -24,6 +24,7 @@ By Tag:
 
 
 @@.todo
+[ ] Check code of toc macro, show caption if available
 [ ] Build frameworks and methodologies.
 [ ] Build dynamic wizard
 @@

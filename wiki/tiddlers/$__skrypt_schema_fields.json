@@ -1,5 +1,5 @@
 {
-    "story-id": {
+    "skrypt-story-id": {
         "defaultValue": "",
         "helpText": "Auto-generated story slug.",
         "readonly": "true",

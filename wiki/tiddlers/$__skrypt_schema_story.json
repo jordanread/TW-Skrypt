@@ -2,14 +2,11 @@
   "entity": "story",
   "description": "Root project container representing a story or book.",
   "required": [
-    "story-id",
-    "skrypt-type",
-    "skrypt-id",
-    "title",
-    "created",
-    "modified"
+    "author"
   ],
   "optional": [
-    "author"
+    "genre",
+    "sub-genre",
+    "wordcount-target"
   ]
 }
