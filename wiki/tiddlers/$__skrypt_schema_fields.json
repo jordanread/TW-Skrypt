@@ -11,13 +11,20 @@
         "readonly": "false",
         "type": "string"
     },
+    "wordcount": {
+        "defaultValue": "",
+        "helpText": "",
+        "readonly": "false",
+        "type": "string",
+        "type": "number"
+    },
     "skrypt-id": {
         "defaultValue": "",
         "helpText": "Auto-generated id for internal linking in TW-Skrypt",
         "readonly": "true",
         "type": "string"
     },
-    "target-wordcount": {
+    "wordcount-target": {
         "defaultValue": "",
         "helpText": "",
         "readonly": "false",
@@ -160,13 +167,6 @@
     },
     "characters-present": {
         "type": "list"
-    },
-    "wordcount": {
-        "defaultValue": "",
-        "helpText": "",
-        "readonly": "false",
-        "type": "string",
-        "type": "number"
     },
     "year": {
         "defaultValue": "",

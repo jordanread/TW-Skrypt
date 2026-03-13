@@ -1,5 +1,5 @@
 created: 20260313130414395
-list: $:/AdvancedSearch [[TW-Script Notes]] $:/skrypt/schema/global-fields $:/skrypt/schema/fields $:/skrypt/wizards/new-story $:/skrypt/schema/types Sanbox
+list: $:/skrypt/procedures/field-editor [[TW-Script Notes]] $:/skrypt/schema/global-fields $:/skrypt/schema/fields $:/skrypt/schema/types Sanbox
 modified: 20260313151503632
 title: $:/StoryList
 type: text/vnd.tiddlywiki

@@ -1,18 +1,20 @@
 created: 20260310155636394
 creator: jordan
-modified: 20260313153047297
+modified: 20260313153927856
 modifier: jordan
 tags: start
 title: Sanbox
 type: text/vnd.tiddlywiki
 
-
 <$list filter="[{$:/skrypt/schema/global-fields}jsonget[]] [{$:/skrypt/schema/story}jsonget[required]]" variable="field">
 
 Field: <<field>>
 
-Key: {{{ [{$:/skrypt/schema/fields}jsonindexes<field>] }}}
+<$list filter="[{$:/skrypt/schema/fields}jsonindexes<field>]" variable="key">
 
-Value: {{{ [{$:/skrypt/schema/fields}jsonget<field>] }}}
+  Key: <<key>>
+  Value: {{{ [{$:/skrypt/schema/fields}jsonget<field>,<key>] }}}
+
+</$list>
 
 </$list>

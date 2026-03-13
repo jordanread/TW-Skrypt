@@ -1,0 +1,48 @@
+created: 20260313155913070
+modified: 20260313162757300
+tags: 
+title: $:/skrypt/procedures/field-editor
+type: text/vnd.tiddlywiki
+
+\procedure skrypt-field-editor(field)
+<$vars
+type={{{ [{$:/skrypt/schema/fields}jsonget<field>,[type]] }}}
+readonly={{{ [{$:/skrypt/schema/fields}jsonget<field>,[readonly]] }}}
+tooltip={{{ [{$:/skrypt/schema/fields}jsonget<field>,[helpText]] }}}
+>
+
+| <<field>> | <<type>> | <<readonly>> | <<tooltip>>
+
+<$list filter="[<readonly>match[true]]">
+
+{{!!<<field>>}}
+
+</$list>
+
+<$list filter="[<readonly>!match[true]]">
+
+<$list filter="[<type>match[string]]">
+<$edit-text field=<<field>>/>
+</$list>
+
+<$list filter="[<type>match[text]]">
+<$edit-text field=<<field>> multiline="yes"/>
+</$list>
+
+<$list filter="[<type>match[number]]">
+<$edit-text field=<<field>> inputmode="numeric"/>
+</$list>
+
+</$list>
+
+|
+
+<$list filter="[<help>!is[blank]]">
+''<<help>>''
+</$list>
+
+</$vars>
+\end
+
+
+<<skrypt-field-editor "skrypt-type">>
