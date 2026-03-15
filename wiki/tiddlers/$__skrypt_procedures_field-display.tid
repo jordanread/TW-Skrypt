@@ -1,5 +1,5 @@
 created: 20260313155913070
-modified: 20260315150656067
+modified: 20260315162617916
 tags: start todo
 title: $:/skrypt/procedures/field-display
 type: text/vnd.tiddlywiki
@@ -10,11 +10,25 @@ type: text/vnd.tiddlywiki
 readonly={{{ [{$:/skrypt/schema/fields}jsonget<field>,[readonly]] }}}
 type={{{ [{$:/skrypt/schema/fields}jsonget<field>,[type]] }}}
 tooltip={{{ [{$:/skrypt/schema/fields}jsonget<field>,[helpText]] }}}
-default={{{ [{$:/skrypt/schema/fields}jsonextract<field>,[defaultValue]] }}}
+default={{{ [{$:/skrypt/schema/fields}jsonget<field>,[defaultValue]] }}}
+label={{{ [{$:/skrypt/schema/fields}jsonget<field>,[label]] }}}
 >
 
-<$text text=<<field>> tooltip=<<tooltip>> />
-<$edit-text field=<<field>> type=<<type>>/>
+<span class="skrypt-field-label">
+
+  <<label>>
+
+  <span class="skrypt-tooltip-container">
+
+    <span class="skrypt-tooltip-icon">ⓘ</span>
+
+    <span class="skrypt-tooltip-content">
+      <<tooltip>>
+    </span>
+
+  </span>
+
+</span>
 
 
 </$vars>

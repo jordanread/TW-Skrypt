@@ -1,0 +1,33 @@
+.skrypt-field-label {
+  font-weight: 600;
+}
+
+.skrypt-tooltip-container {
+  position: relative;
+  display: inline-block;
+  margin-left: 0.25em;
+}
+
+.skrypt-tooltip-icon {
+  cursor: help;
+  opacity: 0.7;
+}
+
+.skrypt-tooltip-content {
+  visibility: hidden;
+  position: absolute;
+  left: 0;
+  top: 1.4em;
+
+  background: var(--tiddler-background);
+  border: 1px solid var(--tiddler-border);
+  padding: 0.5em;
+  border-radius: 4px;
+
+  width: 220px;
+  z-index: 1000;
+}
+
+.skrypt-tooltip-container:hover .skrypt-tooltip-content {
+  visibility: visible;
+}
