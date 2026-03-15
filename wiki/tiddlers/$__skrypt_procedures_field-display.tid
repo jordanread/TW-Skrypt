@@ -1,40 +1,28 @@
 created: 20260313155913070
-modified: 20260315162617916
+modified: 20260315164045841
 tags: start todo
 title: $:/skrypt/procedures/field-display
 type: text/vnd.tiddlywiki
 
 \procedure skrypt-field(field)
-! <<field>>
 <$vars
 readonly={{{ [{$:/skrypt/schema/fields}jsonget<field>,[readonly]] }}}
 type={{{ [{$:/skrypt/schema/fields}jsonget<field>,[type]] }}}
-tooltip={{{ [{$:/skrypt/schema/fields}jsonget<field>,[helpText]] }}}
-default={{{ [{$:/skrypt/schema/fields}jsonget<field>,[defaultValue]] }}}
 label={{{ [{$:/skrypt/schema/fields}jsonget<field>,[label]] }}}
+tooltip={{{ [{$:/skrypt/schema/fields}jsonget<field>,[helpText]] }}}
+default={{{ [{$:/skrypt/schema/fields}jsonget<field>,[default]] }}}
 >
 
 <span class="skrypt-field-label">
-
-  <<label>>
-
-  <span class="skrypt-tooltip-container">
-
-    <span class="skrypt-tooltip-icon">ⓘ</span>
-
+  <<label>>  
+<span class="skrypt-tooltip-container">
     <span class="skrypt-tooltip-content">
       <<tooltip>>
     </span>
-
   </span>
-
 </span>
-
-
 </$vars>
 \end
 
 
-<<skrypt-field "wordcount-target">>
-
-Going to get a nice css native tooltip and the like. Need to adjust some of the json to include a label field. Making a new branch.
+<<skrypt-field "skrypt-type">>
