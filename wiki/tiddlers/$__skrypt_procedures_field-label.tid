@@ -1,0 +1,22 @@
+created: 20260315173827732
+modified: 20260315192011865
+styletiddler: $:/skrypt/styles/fields
+tags: start todo
+title: $:/skrypt/procedures/field-label
+type: text/vnd.tiddlywiki
+
+\procedure skrypt-label(label, tooltip)
+
+<span class="skrypt-field-label">
+  <<label>>  
+  <$list filter="[<tooltip>!is[blank]]">
+    <span class="skrypt-tooltip-container" style="background-color:<<colour sidebar-tab-background>>; color:<<colour foreground>>">
+      <span class="skrypt-tooltip-content">
+        <<tooltip>>
+      </span>
+    </span>
+  </$list>
+ {{!!<<field>>}}
+</span>
+
+\end
