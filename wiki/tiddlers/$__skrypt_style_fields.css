@@ -2,22 +2,24 @@
   font-weight: 600;
 }
 
-.skrypt-tooltip-content
-{  visibility: hidden; /* Hidden by default */
-  width: 130px;
-  background-color: black;
-  color: #ffffff;
-  text-align: center;
-  padding: 5px 0;
-  border-radius: 6px;
-  position: absolute;
-  z-index: 1; /* Ensure tooltip is displayed above content */}
-
 .skrypt-tooltip-container {
   position: relative;
   display: inline-block;
   margin-left: 0.25em;
 }
+.skrypt-tooltip-content
+{  visibility: hidden; /* Hidden by default */  
+  min-width: 180px;
+  max-width: 320px;
+  width: max-content;
+  opacity: .7
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  position: absolute;
+  margin-left: .5em;
+  z-index: 1; /* Ensure tooltip is displayed above content */}
+
 .skrypt-tooltip-container:before {
 content: "ⓘ"
 }

@@ -1,5 +1,5 @@
 created: 20260313155913070
-modified: 20260315164853611
+modified: 20260315170137858
 tags: start todo
 title: $:/skrypt/procedures/field-display
 type: text/vnd.tiddlywiki
@@ -16,7 +16,7 @@ default={{{ [{$:/skrypt/schema/fields}jsonget<field>,[default]] }}}
 <span class="skrypt-field-label">
   <<label>>  
   <$list filter="[<tooltip>!is[blank]]">
-    <span class="skrypt-tooltip-container">
+    <span class="skrypt-tooltip-container" style="background-color:<<colour sidebar-tab-background>>; color:<<colour foreground>>">
       <span class="skrypt-tooltip-content">
         <<tooltip>>
       </span>
@@ -24,7 +24,8 @@ default={{{ [{$:/skrypt/schema/fields}jsonget<field>,[default]] }}}
   </$list>
 </span>
 </$vars>
+
 \end
 
 
-<<skrypt-field "wordcount">>
+<<skrypt-field "skrypt-type">>
