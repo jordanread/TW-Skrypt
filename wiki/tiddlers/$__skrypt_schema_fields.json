@@ -15,7 +15,6 @@
         "defaultValue": "",
         "helpText": "",
         "readonly": "false",
-        "type": "string",
         "type": "number"
     },
     "skrypt-id": {
@@ -26,7 +25,7 @@
     },
     "wordcount-target": {
         "defaultValue": "",
-        "helpText": "",
+        "helpText": "Set a target wordcount. This will display a progress indicator on the story dashboard.",
         "readonly": "false",
         "type": "number"
     },
@@ -124,9 +123,6 @@
         "type": "text"
     },
     "draft-number": {
-        "type": "number"
-    },
-    "wordcount-target": {
         "type": "number"
     },
     "source": {

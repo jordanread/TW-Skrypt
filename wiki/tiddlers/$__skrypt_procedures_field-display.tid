@@ -1,58 +1,26 @@
 created: 20260313155913070
-modified: 20260313203203291
+modified: 20260315150656067
 tags: start todo
 title: $:/skrypt/procedures/field-display
 type: text/vnd.tiddlywiki
-wordcount-target: 
 
 \procedure skrypt-field(field)
 ! <<field>>
 <$vars
-type={{{ [{$:/skrypt/schema/fields}jsonget<field>,[type]] }}}
 readonly={{{ [{$:/skrypt/schema/fields}jsonget<field>,[readonly]] }}}
+type={{{ [{$:/skrypt/schema/fields}jsonget<field>,[type]] }}}
 tooltip={{{ [{$:/skrypt/schema/fields}jsonget<field>,[helpText]] }}}
+default={{{ [{$:/skrypt/schema/fields}jsonextract<field>,[defaultValue]] }}}
 >
 
-| <<field>> | <<type>> | <<readonly>> | <<tooltip>>|
+<$text text=<<field>> tooltip=<<tooltip>> />
+<$edit-text field=<<field>> type=<<type>>/>
 
-<$edit-text field=<<field>> type="number"/>
-<$list filter="[<readonly>match[true]]">
-
-is readonly
-
-
-
-</$list>
-
-<$list filter="[<readonly>!match[true]]">
-
-isn't readonly
-
-<$list filter="[<type>match[string]]">
-
-is string
-
-<$edit-text field=<<field>> type="number"/>
-</$list>
-
-<$list filter="[<type>match[text]]">
-
-is text
-
-<$edit-text field=<<field>> multiline="yes"/>
-</$list>
-
-<$list filter="[<type>match[number]]">
-
-is number
-
-<$edit-text field=<<field>> type="number"/>
-</$list>
-
-</$list>
 
 </$vars>
 \end
 
 
 <<skrypt-field "wordcount-target">>
+
+Going to get a nice css native tooltip and the like. Need to adjust some of the json to include a label field. Making a new branch.
