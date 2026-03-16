@@ -1,40 +1,35 @@
 {
-    "skrypt-type": {
-        "default": "",
-        "helpText": "Internal Skrypt-Type for organization and ViewTemplates.",
-        "label": "Skrypt Type",
-        "readOnly": "true",
-        "type": "$:/skrypt/lookups/types"
-    },
     "skrypt-story-id": {
-        "default": "",
         "helpText": "Auto-generated story slug used internally for organization.",
         "label":"Skrypt Story Id",
         "readonly": "true",
         "type": "text"
     },
     "wordcount": {
-        "default": "",
-        "helpText": "",
+        "helpText": "Auto-calculated word count of all scenes/manuscript content.",
         "label": "Word count",
-        "readonly": "false",
+        "readonly": "true",
         "type": "number"
     },
     "skrypt-id": {
-        "default": "",
-        "helpText": "",
-        "label": "Word count",
-        "readonly": "false",
+        "helpText": "Internal skrypt-id for identification of skrypt types.",
+        "label": "Skrypt Id",
+        "readonly": "true",
         "type": "text"
     },
+    "skrypt-type": {
+        "helpText": "Internal Skrypt-Type for organization and ViewTemplates. This never needs to be set when using the wizards.",
+        "label": "Skrypt Type",
+        "readOnly": "true",
+        "type": "$:/skrypt/lookups/types"
+    },
     "wordcount-target": {
-        "defaultValue": "",
         "helpText": "Set a target wordcount. This will display a progress indicator on the story dashboard.",
+        "label": "Word count target/goal",
         "readonly": "false",
         "type": "number"
     },
     "genre": {
-        "defaultValue": "",
         "helpText": "Choose your desired genre.",
         "readonly": "false",
         "type": "$:/skrypt/lookups/genre"
