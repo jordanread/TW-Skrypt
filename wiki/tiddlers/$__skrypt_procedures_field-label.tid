@@ -1,6 +1,6 @@
 created: 20260315173827732
 description: This procedure generates a label with a tooltip based on two variables (label,tooltip)
-modified: 20260326131042231
+modified: 20260326140929128
 procedure-name: skrypt-label
 styletiddler: $:/skrypt/styles/fields
 tags: todo
@@ -21,3 +21,5 @@ type: text/vnd.tiddlywiki
 
 \end
 
+<<skrypt-label label:Test tooltip:TooltipText >>
+<$transclude $variable=skrypt-label label="I'm a label!" tooltip="look a tooltip" />
