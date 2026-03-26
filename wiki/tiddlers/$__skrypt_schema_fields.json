@@ -20,7 +20,7 @@
     "skrypt-type": {
         "helpText": "Internal Skrypt-Type for organization and ViewTemplates. This never needs to be set when using the wizards.",
         "label": "Skrypt Type",
-        "readOnly": "true",
+        "readonly": "true",
         "type": "$:/skrypt/lookups/types"
     },
     "wordcount-target": {

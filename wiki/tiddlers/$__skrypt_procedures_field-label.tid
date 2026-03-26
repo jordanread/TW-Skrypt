@@ -1,12 +1,13 @@
 created: 20260315173827732
-modified: 20260315192011865
+description: This procedure generates a label with a tooltip based on two variables (label,tooltip)
+modified: 20260326131042231
+procedure-name: skrypt-label
 styletiddler: $:/skrypt/styles/fields
-tags: start todo
+tags: todo
 title: $:/skrypt/procedures/field-label
 type: text/vnd.tiddlywiki
 
 \procedure skrypt-label(label, tooltip)
-
 <span class="skrypt-field-label">
   <<label>>  
   <$list filter="[<tooltip>!is[blank]]">
@@ -16,7 +17,7 @@ type: text/vnd.tiddlywiki
       </span>
     </span>
   </$list>
- {{!!<<field>>}}
 </span>
 
 \end
+

@@ -1,7 +1,7 @@
 created: 20260313155913070
-modified: 20260315191930921
+modified: 20260326131029503
 styletiddler: $:/skrypt/styles/fields
-tags: start todo
+tags: todo
 title: $:/skrypt/procedures/field-display
 type: text/vnd.tiddlywiki
 
@@ -13,32 +13,15 @@ type={{{ [{$:/skrypt/schema/fields}jsonget<field>,[type]] }}}
 tooltip={{{ [{$:/skrypt/schema/fields}jsonget<field>,[helpText]] }}}
 default={{{ [{$:/skrypt/schema/fields}jsonget<field>,[default]] }}}
 >
-<span class="skrypt-field-label">
-  <<label>>  
-  <$list filter="[<tooltip>!is[blank]]">
-    <span class="skrypt-tooltip-container" style="background-color:<<colour sidebar-tab-background>>; color:<<colour foreground>>">
-      <span class="skrypt-tooltip-content">
-        <<tooltip>>
-      </span>
-    </span>
-  </$list>
-</span>
-<$list filter="[<readonly>!is[blank]]">
+<$log />
+<$transclude $variable="skrypt-label" label=<label> readonly=<readonly> />
 
-</$list>
+
+
+
 </$vars>
 \end
 
 
-<$let
-field="skrypt-type"
-label={{{ [{$:/skrypt/schema/fields}jsonget<field>,[label]] }}}
-readonly={{{ [{$:/skrypt/schema/fields}jsonget<field>,[readonly]] }}}
-type={{{ [{$:/skrypt/schema/fields}jsonget<field>,[type]] }}}
-tooltip={{{ [{$:/skrypt/schema/fields}jsonget<field>,[helpText]] }}}
-default={{{ [{$:/skrypt/schema/fields}jsonget<field>,[default]] }}}
->
 
-<$transclude $variable="skrypt-field" field=<<field>>/>
 
-</$let>
