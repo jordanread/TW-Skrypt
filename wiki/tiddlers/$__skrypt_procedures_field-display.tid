@@ -1,7 +1,7 @@
 created: 20260313155913070
-modified: 20260326131029503
+modified: 20260326150051299
 styletiddler: $:/skrypt/styles/fields
-tags: todo
+tags: todo nostart
 title: $:/skrypt/procedures/field-display
 type: text/vnd.tiddlywiki
 
@@ -15,13 +15,7 @@ default={{{ [{$:/skrypt/schema/fields}jsonget<field>,[default]] }}}
 >
 <$log />
 <$transclude $variable="skrypt-label" label=<label> readonly=<readonly> />
-
-
-
-
 </$vars>
 \end
-
-
 
 

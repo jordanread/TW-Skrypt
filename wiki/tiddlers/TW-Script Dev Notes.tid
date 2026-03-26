@@ -1,19 +1,17 @@
 created: 20260310190038308
-modified: 20260313150153641
+modified: 20260326144554476
 tags: start
-title: TW-Script Notes
+title: TW-Script Dev Notes
 type: text/vnd.tiddlywiki
 
 !!! TODO
 
+Tiddlers currently in progress use the  <<tag todo>> tag. 
+
 <<checklist focus:"no">>
 
-By Tag: 
 
-<<list-links "[all[tiddlers+shadows]tag[todo]]">>
-
-
-<<slider label:"All Shadows" src:"
+<<slider label:"All Skrypt Shadows" src:"
 
 !! Shadows
 <<list-links '[all[tiddlers+shadows]prefix[$:/skrypt]]'>>

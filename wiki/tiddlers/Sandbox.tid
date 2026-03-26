@@ -1,8 +1,8 @@
 created: 20260310155636394
 creator: jordan
-modified: 20260326125038003
+modified: 20260326150011689
 modifier: jordan
-tags: start
+tags: 
 title: Sandbox
 type: text/vnd.tiddlywiki
 
@@ -10,16 +10,46 @@ type: text/vnd.tiddlywiki
 
 <$set name="procTiddler" filter="[[$:/skrypt/procedures/field-label]]">
 
+<<callout note "
+The following is within a `<$set>` widget using `procTiddler` as the variable for the `$transclude` widget.">>
+
 <<procTiddler>> - <$transclude $tiddler=<<procTiddler>> $field="description" />
 
 Results of `<<skrypt-label label:Test tooltip:TooltipText >>`: 
-<<skrypt-label label:Test tooltip:TooltipText >>
+<<skrypt-label label:""Test"" tooltip:""TooltipText"" >>
 
 Results of `<$transclude $variable=skrypt-label label="I'm a label!" tooltip="look a tooltip" />`:
 <$transclude $variable=skrypt-label label="I'm a label!" tooltip="look a tooltip" />
 </$set>
 
+<<callout note "
+The following is pure WikiText. The fact that I have looked at [[Those m****f***ing Brackets|https://pesky-brackets.tiddlyhost.com/]] and am still testing out multiple syntax forms of making this work may speak to my current frustration with this. I //may// be going crazy, and I haven't even started working with variables.">>
 
+The following ways of calling this procedure are tried:
+
+```
+
+<<skrypt-label label:"HelloLabel" tooltip:"label Tooltip">>
+<<skrypt-label label:'HelloLabel' tooltip:'label Tooltip'>>
+<<skrypt-label label="HelloLabel" tooltip="label Tooltip">>
+<<skrypt-label label='HelloLabel' tooltip='label Tooltip'>>
+<$transclude $variable="skrypt-label" label="I am a label!" tooltip="look a tooltip" />
+<$transclude $variable='skrypt-label' label='I am a label!' tooltip='look a tooltip' />
+```
+
+!! Results
+
+<<skrypt-label label:"HelloLabel" tooltip:"label Tooltip">>
+
+<<skrypt-label label:'HelloLabel' tooltip:'label Tooltip'>>
+
+<<skrypt-label label="HelloLabel" tooltip="label Tooltip">>
+
+<<skrypt-label label='HelloLabel' tooltip='label Tooltip'>>
+
+<$transclude $variable="skrypt-label" label="I am a label!" tooltip="look a tooltip" />
+
+<$transclude $variable='skrypt-label' label='I am a label!' tooltip='look a tooltip' />
 
 
 

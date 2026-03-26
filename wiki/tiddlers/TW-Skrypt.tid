@@ -1,7 +1,14 @@
 created: 20260310105013758
-modified: 20260326132915384
+modified: 20260326151334719
 tags: 
 title: TW-Skrypt
 type: text/vnd.tiddlywiki
 
 Skrypt is a //going to be// a plugin/framework/content for using tiddlywiki as a writing platform. I'm using scrivener/manuskript as a kind of baseline for the different tiddler types. If you're seeing this message (and a red bar indicating that this isn't ready yet), it's because I deployed a static version of this, and probably need some specific help.
+
+<<callout HELP "
+Right now, I can't seem to call a procedure from anywhere except in the tiddler that defines it. The eventual flow is going to be choosing a type from a [[lookup|$:/skrypt/lookups/types]] (this might change to a dictionary or something later), find the associated schema based on the name of the tiddler ([[$:/skrypt/schema/story]] for a story), grab the required and optional fields from the json object, based on the name of the fields, look up the keys in [[$:/skrypt/schema/fields]], create the label and whatever type of display it needs. I already stubbed out a procedure to just take the field names ([[$:/skrypt/procedures/field-display]]) and then create the label and everything. But I can't even get the label procedure to work, and it just takes two strings!! [[$:/skrypt/procedures/field-label]].
+
+">>
+
+<<slider label:"Screenshot" src:"{{ProcPreviewWithCall.png}}" labelClass:"" srcClass:"">>
