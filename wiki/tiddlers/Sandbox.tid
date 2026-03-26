@@ -1,0 +1,56 @@
+created: 20260310155636394
+creator: jordan
+modified: 20260326125038003
+modifier: jordan
+tags: start
+title: Sandbox
+type: text/vnd.tiddlywiki
+
+! Testing area
+
+<$set name="procTiddler" filter="[[$:/skrypt/procedures/field-label]]">
+
+<<procTiddler>> - <$transclude $tiddler=<<procTiddler>> $field="description" />
+
+Results of `<<skrypt-label label:Test tooltip:TooltipText >>`: 
+<<skrypt-label label:Test tooltip:TooltipText >>
+
+Results of `<$transclude $variable=skrypt-label label="I'm a label!" tooltip="look a tooltip" />`:
+<$transclude $variable=skrypt-label label="I'm a label!" tooltip="look a tooltip" />
+</$set>
+
+
+
+
+
+
+
+
+
+<<slider label:"Bulk field operations" src:'
+
+```
+<$list filter="[{$:/skrypt/schema/global-fields}jsonget[]] [{$:/skrypt/schema/story}jsonget[required]]" variable="field">
+
+!!!<<field>>
+<$list filter="[{$:/skrypt/schema/fields}jsonindexes<field>]" variable="key">
+
+|<<key>> |{{{ [{$:/skrypt/schema/fields}jsonget<field>,<key>] }}} |
+</$list>
+
+</$list>
+```
+
+<$list filter="[{$:/skrypt/schema/global-fields}jsonget[]] [{$:/skrypt/schema/story}jsonget[required]]" variable="field">
+
+!!!<<field>>
+<$list filter="[{$:/skrypt/schema/fields}jsonindexes<field>]" variable="key">
+
+|<<key>> |{{{ [{$:/skrypt/schema/fields}jsonget<field>,<key>] }}} |
+</$list>
+
+</$list>
+
+' labelClass:"" srcClass:"">>
+
+

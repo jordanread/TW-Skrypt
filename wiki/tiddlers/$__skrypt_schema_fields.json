@@ -1,0 +1,37 @@
+{
+    "skrypt-story-id": {
+        "helpText": "Auto-generated story slug used internally for organization.",
+        "label":"Skrypt Story Id",
+        "readonly": "true",
+        "type": "text"
+    },
+    "wordcount": {
+        "helpText": "Auto-calculated word count of all scenes/manuscript content.",
+        "label": "Word count",
+        "readonly": "true",
+        "type": "number"
+    },
+    "skrypt-id": {
+        "helpText": "Internal skrypt-id for identification of skrypt types.",
+        "label": "Skrypt Id",
+        "readonly": "true",
+        "type": "text"
+    },
+    "skrypt-type": {
+        "helpText": "Internal Skrypt-Type for organization and ViewTemplates. This never needs to be set when using the wizards.",
+        "label": "Skrypt Type",
+        "readonly": "true",
+        "type": "$:/skrypt/lookups/types"
+    },
+    "wordcount-target": {
+        "helpText": "Set a target wordcount. This will display a progress indicator on the story dashboard.",
+        "label": "Word count target/goal",
+        "readonly": "false",
+        "type": "number"
+    },
+    "genre": {
+        "helpText": "Choose your desired genre.",
+        "readonly": "false",
+        "type": "$:/skrypt/lookups/genre"
+    }
+}
